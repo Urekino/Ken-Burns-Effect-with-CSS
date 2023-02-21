@@ -1,0 +1,26 @@
+body {
+  background: #000;
+}
+
+.ken {
+  overflow: hidden;
+  animation: kenny 10s infinite;
+  background-image: url("SailingBoats.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 600px;
+  opacity: 1;
+  overflow: hidden;
+  scale: 1.5;
+  border: 10px #333 solid;
+  
+}
+
+@keyframes kenny {
+  100% {
+    transform: scale3d(2, 2, 2) translate3d(50px, 10px, 0px);
+    animation-timing-function: ease-in;
+    
+  }
+}
