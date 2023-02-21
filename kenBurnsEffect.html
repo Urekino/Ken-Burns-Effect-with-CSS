@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Ken Burns Effect</title>
+    <style type= "text/css">
+      h1{
+        font-family: sans-serif;
+        font-size: 48px;
+        color: #3399FF;
+      }
+
+      <body>
+        padding: 10px;
+        background-color: #F4F4F4;
+      </body>
+
+      #image {
+        width: 450px;
+        height: 300px;
+        overflow: hidden;
+        border: 10px #333 solid;
+      }
+
+      #image img {
+        0% {
+          opacity: 0;
+        }
+        5% {
+          opacity: 1
+        }
+        95% {
+          transform: scale3d(1.5, 1.5, 1.5) translate3d(-190px, -120px, 0px);
+          animation-timing-function: ease-in;
+          opacity: 1;
+        }
+        100% {
+          transform: scale3d(2, 2, 2) translate3d(-170px, -100px, 0px);
+          opacity: 0;
+        }
+      }
+
+    </style>
+
+  </head>
+  <body>
+      <h1>The Ken Burns Effect</h1>
+      <div id="image">
+        <img src= "SailingBoats.jpg"/>
+      </div>
+  </body>
+</html>
