@@ -3,7 +3,6 @@ body {
 }
 
 .ken {
-  overflow: hidden;
   animation: kenny 10s infinite;
   background-image: url("SailingBoats.jpg");
   background-size: cover;
